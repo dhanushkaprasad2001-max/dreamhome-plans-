@@ -1,0 +1,470 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Explore 3D home design concepts, furnished floor-plan views and practical ways to compare room connections, furniture, materials and exterior ideas.">
+  <meta name="robots" content="index,follow">
+  <link rel="canonical" href="https://dhanushkaprasad2001-max.github.io/dreamhome-plans-/3d-designs.html">
+  <meta name="theme-color" content="#14243a">
+  <meta property="og:title" content="3D Home Designs and Floor-Plan Ideas | DreamHome Plans">
+  <meta property="og:description" content="Browse illustrative 3D home concepts and learn how to review room layouts, furniture positions and design details.">
+  <meta property="og:type" content="website">
+  <title>3D Home Designs and Floor-Plan Ideas | DreamHome Plans</title>
+  <style>
+    :root {
+      --navy: #14243a;
+      --navy-light: #203752;
+      --gold: #c6a064;
+      --gold-pale: #f4ecdf;
+      --ink: #243247;
+      --muted: #687587;
+      --paper: #ffffff;
+      --soft: #f7f8fa;
+      --line: #e8ebef;
+      --shadow: 0 14px 36px rgba(20,36,58,.08);
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: var(--paper);
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.7;
+    }
+    a { color: inherit; }
+    .container { width: min(1080px, calc(100% - 38px)); margin: 0 auto; }
+    .topline {
+      padding: 8px 0;
+      background: var(--navy);
+      color: #e7edf4;
+      font-size: 10px;
+      letter-spacing: .14em;
+      text-align: center;
+      text-transform: uppercase;
+    }
+    header { border-bottom: 1px solid var(--line); background: #fff; }
+    .nav-wrap {
+      min-height: 72px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    .brand {
+      color: var(--navy);
+      font: 700 25px/1 Georgia, serif;
+      text-decoration: none;
+      white-space: nowrap;
+    }
+    .brand span { color: var(--gold); }
+    .menu-toggle {
+      display: none;
+      border: 1px solid var(--line);
+      border-radius: 7px;
+      background: #fff;
+      color: var(--navy);
+      padding: 8px 12px;
+      font-size: 20px;
+      cursor: pointer;
+    }
+    .nav { display: flex; align-items: center; gap: 18px; }
+    .nav a {
+      color: #425065;
+      font-size: 12px;
+      text-decoration: none;
+    }
+    .nav a:hover, .nav a:focus { color: #9a7338; }
+    .hero {
+      overflow: hidden;
+      background: linear-gradient(115deg, rgba(15,31,51,.98), rgba(32,55,82,.94));
+      color: #fff;
+    }
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 36px;
+      align-items: center;
+      padding: 62px 0 68px;
+    }
+    .eyebrow {
+      color: var(--gold);
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+    }
+    h1, h2, h3 { margin-top: 0; }
+    h1 {
+      margin: 12px 0 17px;
+      font: 500 clamp(37px, 5vw, 56px)/1.1 Georgia, serif;
+      letter-spacing: -.025em;
+    }
+    .hero-copy { max-width: 600px; margin: 0; color: #e0e6ed; }
+    .hero-art {
+      padding: 12px;
+      border: 1px solid rgba(198,160,100,.65);
+      background: rgba(255,255,255,.06);
+      box-shadow: 0 18px 44px rgba(0,0,0,.18);
+    }
+    .hero-art svg { display: block; width: 100%; height: auto; }
+    .section { padding: 66px 0; }
+    .section-soft { background: var(--soft); }
+    .section-heading {
+      max-width: 740px;
+      margin: 0 auto 32px;
+      text-align: center;
+    }
+    .section-heading h2, .feature-copy h2 {
+      margin: 9px 0 12px;
+      color: var(--navy);
+      font: 500 clamp(29px, 4vw, 40px)/1.2 Georgia, serif;
+    }
+    .section-heading p, .feature-copy p { margin: 0; color: var(--muted); }
+    .feature-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+    .feature {
+      padding: 23px;
+      border: 1px solid var(--line);
+      background: #fff;
+      box-shadow: 0 7px 22px rgba(20,36,58,.04);
+    }
+    .feature-number {
+      display: inline-flex;
+      width: 34px;
+      height: 34px;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 12px;
+      border: 1px solid var(--gold);
+      border-radius: 50%;
+      color: #8c682f;
+      font: 16px Georgia, serif;
+    }
+    .feature h3 { margin: 0 0 8px; color: var(--navy); font: 500 22px/1.25 Georgia, serif; }
+    .feature p { margin: 0; color: var(--muted); font-size: 14px; }
+    .showcase {
+      display: grid;
+      grid-template-columns: .9fr 1.1fr;
+      gap: 34px;
+      align-items: center;
+    }
+    .showcase-visual {
+      min-height: 290px;
+      display: grid;
+      place-items: center;
+      padding: 18px;
+      border: 1px solid var(--line);
+      background: #f1f4f7;
+    }
+    .showcase-visual svg { width: 100%; max-width: 470px; height: auto; }
+    .showcase h2 { margin: 9px 0 12px; color: var(--navy); font: 500 32px/1.2 Georgia, serif; }
+    .showcase p { color: var(--muted); }
+    .meta { color: #9a7338; font-size: 10px; font-weight: 700; letter-spacing: .13em; text-transform: uppercase; }
+    .button-link {
+      display: inline-flex;
+      min-height: 44px;
+      align-items: center;
+      justify-content: center;
+      margin-top: 8px;
+      padding: 0 18px;
+      border: 1px solid var(--gold);
+      background: var(--gold);
+      color: #17263b;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: .08em;
+      text-decoration: none;
+    }
+    .button-link:hover { background: #d7b77f; }
+    .steps {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 14px 20px;
+      padding: 0;
+      list-style: none;
+    }
+    .steps li {
+      padding: 17px 18px;
+      border: 1px solid var(--line);
+      background: #fff;
+      color: #596677;
+      font-size: 14px;
+    }
+    .steps strong { display: block; margin-bottom: 4px; color: var(--navy); }
+    .note {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 20px 23px;
+      border-left: 3px solid var(--gold);
+      background: var(--gold-pale);
+      color: #5f5a50;
+      font-size: 13px;
+    }
+    .related {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 12px;
+    }
+    .related a {
+      display: inline-block;
+      padding: 10px 14px;
+      border: 1px solid var(--line);
+      color: #89652f;
+      font-size: 13px;
+      text-decoration: none;
+    }
+    .related a:hover { border-color: var(--gold); background: var(--gold-pale); }
+    footer { padding: 36px 0 20px; background: var(--navy); color: #dce3eb; }
+    .footer-inner { display: flex; justify-content: space-between; gap: 24px; flex-wrap: wrap; }
+    footer .brand { color: #fff; }
+    footer p { max-width: 440px; color: #b9c4d0; font-size: 13px; }
+    .footer-links { display: flex; align-items: center; flex-wrap: wrap; gap: 15px; }
+    .footer-links a { color: #dce3eb; font-size: 12px; text-decoration: none; }
+    .footer-links a:hover { color: var(--gold); }
+    .copyright {
+      margin-top: 24px;
+      padding-top: 15px;
+      border-top: 1px solid rgba(255,255,255,.14);
+      color: #aeb9c6;
+      font-size: 11px;
+    }
+    @media (max-width: 850px) {
+      .nav { gap: 12px; }
+      .feature-grid { grid-template-columns: 1fr 1fr; }
+    }
+    @media (max-width: 680px) {
+      .nav-wrap { min-height: 66px; }
+      .menu-toggle { display: block; }
+      .nav { display: none; width: 100%; padding-bottom: 13px; flex-direction: column; align-items: flex-start; gap: 0; }
+      .nav.open { display: flex; }
+      .nav a { width: 100%; padding: 10px 0; border-top: 1px solid var(--line); }
+      .hero-grid, .showcase { grid-template-columns: 1fr; }
+      .hero-grid { padding: 48px 0 54px; }
+      .section { padding: 52px 0; }
+      .feature-grid, .steps { grid-template-columns: 1fr; }
+      .showcase-visual { min-height: 220px; }
+    }
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "3D Home Designs",
+    "description": "A collection of illustrative 3D home design concepts and practical floor-plan guidance.",
+    "url": "https://dhanushkaprasad2001-max.github.io/dreamhome-plans-/3d-designs.html",
+    "isPartOf": {
+      "@type": "WebSite",
+      "name": "DreamHome Plans",
+      "url": "https://dhanushkaprasad2001-max.github.io/dreamhome-plans-/"
+    }
+  }
+  </script>
+</head>
+<body>
+  <div class="topline">3D home concepts · Furnished layouts · Practical planning</div>
+  <header>
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html">DreamHome<span> Plans</span></a>
+      <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false">☰</button>
+      <nav class="nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="house-plans.html">House Plans</a>
+        <a href="modern-homes.html">Modern Homes</a>
+        <a href="3d-designs.html" aria-current="page">3D Designs</a>
+        <a href="room-layout-ideas.html">Room Layouts</a>
+        <a href="interiors.html">Interiors</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <div class="eyebrow">Visualise the spaces</div>
+          <h1>Explore a Home Before You Build It.</h1>
+          <p class="hero-copy">3D home concepts can make room relationships, furniture zones and exterior ideas easier to understand. Browse our illustrated examples and use them as a starting point for a more detailed conversation with a qualified local designer.</p>
+        </div>
+        <div class="hero-art">
+          <svg viewBox="0 0 620 390" role="img" aria-labelledby="heroTitle heroDesc">
+            <title id="heroTitle">Illustrative axonometric home layout</title>
+            <desc id="heroDesc">A simple cutaway home concept showing two connected rooms, furniture blocks and a pitched roof outline.</desc>
+            <polygon points="310,35 560,165 310,295 60,165" fill="#f2f4f6" stroke="#c6a064" stroke-width="3"/>
+            <polygon points="60,165 310,295 310,345 60,215" fill="#d8e0e8" stroke="#8b9aab" stroke-width="2"/>
+            <polygon points="310,295 560,165 560,215 310,345" fill="#aebccc" stroke="#718196" stroke-width="2"/>
+            <polygon points="90,160 310,45 530,160 310,275" fill="none" stroke="#c6a064" stroke-width="7" stroke-linejoin="round"/>
+            <path d="M310 45 V275 M200 103 L420 218 M420 103 L200 218" stroke="#9aa8b7" stroke-width="2" stroke-dasharray="6 6"/>
+            <polygon points="115,165 225,108 310,153 200,210" fill="#e9dfd0" stroke="#536477" stroke-width="2"/>
+            <polygon points="200,210 310,153 310,270 200,327" fill="#f4efe7" stroke="#536477" stroke-width="2"/>
+            <polygon points="310,153 420,210 420,327 310,270" fill="#dce6ef" stroke="#536477" stroke-width="2"/>
+            <polygon points="225,108 310,65 395,108 310,153" fill="#eef2f5" stroke="#536477" stroke-width="2"/>
+            <rect x="242" y="154" width="45" height="22" rx="4" transform="skewY(27)" fill="#b8a487" stroke="#536477" stroke-width="2"/>
+            <polygon points="345,186 392,210 392,240 345,216" fill="#f8fafc" stroke="#536477" stroke-width="2"/>
+            <polygon points="345,186 370,173 417,197 392,210" fill="#c6d2de" stroke="#536477" stroke-width="2"/>
+            <path d="M310 35 L310 12 M295 23 L310 12 L325 23" fill="none" stroke="#c6a064" stroke-width="3" stroke-linecap="round"/>
+            <text x="310" y="378" text-anchor="middle" fill="#e7edf4" font-size="13" font-family="Arial">Illustrative 3D planning concept</text>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-heading">
+          <div class="eyebrow">What a 3D concept can show</div>
+          <h2>See More Than the Room Names.</h2>
+          <p>A useful visual should help you ask better questions about the design. It should support the floor plan, not replace measured drawings or professional checks.</p>
+        </div>
+        <div class="feature-grid">
+          <article class="feature">
+            <span class="feature-number">01</span>
+            <h3>Room Relationships</h3>
+            <p>Understand how living areas, bedrooms, bathrooms and service spaces connect, and whether the circulation feels straightforward.</p>
+          </article>
+          <article class="feature">
+            <span class="feature-number">02</span>
+            <h3>Furniture and Clearances</h3>
+            <p>Review approximate furniture positions, door swings and walking routes before deciding whether a room needs more usable space.</p>
+          </article>
+          <article class="feature">
+            <span class="feature-number">03</span>
+            <h3>Materials and Exterior Form</h3>
+            <p>Compare roof shapes, window proportions, wall finishes and colour combinations as early design options for your location.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-soft">
+      <div class="container showcase">
+        <div class="showcase-visual">
+          <svg viewBox="0 0 560 330" role="img" aria-labelledby="planTitle planDesc">
+            <title id="planTitle">Two-bedroom home floor-plan concept</title>
+            <desc id="planDesc">A simplified top-down arrangement with living and kitchen spaces on one side, two bedrooms on the other and a central passage.</desc>
+            <rect x="54" y="42" width="452" height="238" rx="3" fill="#fff" stroke="#273b54" stroke-width="5"/>
+            <rect x="60" y="48" width="175" height="104" fill="#eadfce" stroke="#fff" stroke-width="4"/>
+            <rect x="60" y="156" width="175" height="118" fill="#e7ece5" stroke="#fff" stroke-width="4"/>
+            <rect x="241" y="48" width="76" height="226" fill="#f4ecdf" stroke="#fff" stroke-width="4"/>
+            <rect x="323" y="48" width="177" height="104" fill="#dce6ef" stroke="#fff" stroke-width="4"/>
+            <rect x="323" y="156" width="177" height="76" fill="#dce6ef" stroke="#fff" stroke-width="4"/>
+            <rect x="323" y="236" width="110" height="38" fill="#e9e4d9" stroke="#fff" stroke-width="4"/>
+            <rect x="437" y="236" width="63" height="38" fill="#e3e7eb" stroke="#fff" stroke-width="4"/>
+            <g fill="none" stroke="#536477" stroke-width="2">
+              <rect x="82" y="73" width="115" height="30" rx="4"/>
+              <rect x="92" y="185" width="96" height="52" rx="4"/>
+              <rect x="350" y="72" width="120" height="55" rx="4"/>
+              <rect x="350" y="174" width="120" height="45" rx="4"/>
+              <path d="M259 48 V274 M299 48 V274"/>
+            </g>
+            <g fill="#203752" font-family="Arial" font-size="12" font-weight="700" text-anchor="middle">
+              <text x="147" y="132">LIVING</text>
+              <text x="147" y="258">KITCHEN</text>
+              <text x="279" y="160" transform="rotate(-90 279 160)">PASSAGE</text>
+              <text x="411" y="143">BEDROOM 1</text>
+              <text x="411" y="225">BEDROOM 2</text>
+              <text x="378" y="261" font-size="9">BATH</text>
+              <text x="468" y="261" font-size="9">UTILITY</text>
+            </g>
+          </svg>
+        </div>
+        <div class="feature-copy">
+          <div class="meta">Featured 3D concept</div>
+          <h2>A Compact Two-Bedroom Home</h2>
+          <p>Explore an illustrative 28 × 32 ft single-storey home concept with two bedrooms, an open kitchen and dining area, a living room and a central passage. The article includes an axonometric visual, a simple 2D room relationship diagram, suggested room dimensions and practical planning notes.</p>
+          <p>Use the example to compare how a furnished layout may feel, then check every measurement against your actual site, household needs and local requirements.</p>
+          <a class="button-link" href="3d-two-bedroom-home-concept.html">VIEW THE 3D HOME CONCEPT</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-heading">
+          <div class="eyebrow">How to review a visual</div>
+          <h2>Five Checks Before You Fall in Love with a Design.</h2>
+          <p>Use this checklist when comparing 3D images, floor plans or early design proposals.</p>
+        </div>
+        <ol class="steps">
+          <li><strong>1. Confirm the overall dimensions.</strong>Compare the stated footprint with your land, setbacks and the usable area you actually need.</li>
+          <li><strong>2. Check every room connection.</strong>Make sure doors, corridors and shared spaces provide sensible routes for daily activities.</li>
+          <li><strong>3. Add real furniture sizes.</strong>Test beds, wardrobes, sofas, appliances and storage rather than relying on decorative symbols.</li>
+          <li><strong>4. Review light, privacy and climate.</strong>Window positions, shading, ventilation and roof drainage must suit the actual site.</li>
+          <li><strong>5. Request professional drawings.</strong>Have a qualified local team coordinate structure, services, safety, approvals and construction details.</li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section section-soft">
+      <div class="container">
+        <div class="note"><strong>Important:</strong> 3D pictures are communication tools, not proof that a design is safe, compliant or ready to build. The concepts on DreamHome Plans are for general inspiration only. Building regulations, climate requirements and professional licensing differ across the USA, UK, Canada, Australia and local jurisdictions. Obtain site-specific advice and approved drawings from qualified professionals before construction.</div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-heading">
+          <div class="eyebrow">Keep planning</div>
+          <h2>Explore Related Design Guides.</h2>
+          <p>Move between the 3D view, the floor-plan concept and practical room layouts.</p>
+        </div>
+        <div class="related">
+          <a href="3d-two-bedroom-home-concept.html">Two-Bedroom 3D Home Concept</a>
+          <a href="compact-two-bedroom-home-plan.html">Compact Two-Bedroom House Plan</a>
+          <a href="room-layout-ideas.html">Room Layout Ideas</a>
+          <a href="modern-homes.html">Modern Home Ideas</a>
+          <a href="house-plans.html">Browse House Plans</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-inner">
+        <div>
+          <a class="brand" href="index.html">DreamHome<span> Plans</span></a>
+          <p>Illustrative home concepts and practical design inspiration to help you plan more thoughtfully.</p>
+        </div>
+        <nav class="footer-links" aria-label="Footer navigation">
+          <a href="house-plans.html">House Plans</a>
+          <a href="modern-homes.html">Modern Homes</a>
+          <a href="room-layout-ideas.html">Room Layouts</a>
+          <a href="interiors.html">Interiors</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+          <a href="privacy-policy.html">Privacy</a>
+        </nav>
+      </div>
+      <div class="copyright">© 2026 DreamHome Plans. Design inspiration for every home.</div>
+    </div>
+  </footer>
+
+  <script>
+    const menuButton = document.querySelector('.menu-toggle');
+    const navigation = document.querySelector('.nav');
+    menuButton.addEventListener('click', () => {
+      const isOpen = navigation.classList.toggle('open');
+      menuButton.setAttribute('aria-expanded', String(isOpen));
+      menuButton.setAttribute('aria-label', isOpen ? 'Close navigation' : 'Open navigation');
+      menuButton.textContent = isOpen ? '×' : '☰';
+    });
+    navigation.querySelectorAll('a').forEach((link) => {
+      link.addEventListener('click', () => {
+        navigation.classList.remove('open');
+        menuButton.setAttribute('aria-expanded', 'false');
+        menuButton.setAttribute('aria-label', 'Open navigation');
+        menuButton.textContent = '☰';
+      });
+    });
+  </script>
+</body>
+</html>
